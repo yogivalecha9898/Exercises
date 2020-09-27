@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(white 60%, lightgray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    position: relative;
+}
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal .container {
+    z-index: 1;
+    width: 60%;
+    height: 30%;
+    background-color: #fff;
+}
+.modal.show {
+    z-index: 10;
+    opacity: 1;
+}
+
+.heading {
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 15%;
+}
+.heading h1 {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+.heading p {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+.form {
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 15%;
+
+}
+.inputarea {
+    position: relative;
+    /* border: 1px solid black; */
+    height: 60%;
+}
+label {
+    position: absolute;
+    font-size: 1.5rem;
+}
+textarea {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+textarea::placeholder {
+    font-size: 1rem;
+    /* padding-left: 5px; */
+}
+.submit {
+    width: 15%;
+    height: 40%;
+    margin: 1% 50%;
+    transform: translateX(-50%);
+    background-color: green;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.submit:hover {
+    cursor: pointer;
+    background-color: darkgreen;
+}
+
+.container {
+    height: 50%;
+    /* border: 1px solid black; */
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont {
+    width: 95%;
+    height: 90%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+.content {
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.content .after {
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    color: lightgray;
+    z-index: 1;
+}
+.after:hover {
+    cursor: pointer;
+    color: gray;
+}
+.content p {
+    padding: 5px;
+}
+
